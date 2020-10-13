@@ -24,7 +24,7 @@ def upgrade():
         sa.Column('surname', sa.String(50)),
         sa.Column('chatname', sa.String(50)),
         sa.Column('github_name', sa.String(50)),
-        sa.Column('id_number', sa.Integer(13)),
+        sa.Column('id_number', sa.Integer),
     )
 
 
