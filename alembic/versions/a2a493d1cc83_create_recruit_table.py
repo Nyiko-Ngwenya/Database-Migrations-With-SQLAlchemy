@@ -20,11 +20,11 @@ def upgrade():
     op.create_table(
         'recruits',
         sa.Column('id', sa.Integer ,primary_key=True),
-        sa.Column('first_name', sa.String(50), nullable=False),
+        sa.Column('first_name', sa.String(50)),
         sa.Column('surname', sa.String(50)),
         sa.Column('chatname', sa.String(50)),
         sa.Column('github_name', sa.String(50)),
-        sa.Column('id_number', sa.Integer),
+        sa.Column('id_number', sa.Integer)
     )
 
 
