@@ -13,4 +13,4 @@ class Recruit(Base):
     chatname = Column(String)
     github_name = Column(String)
     id_number = Column(Integer)
-    # personal_email_address = Column(String,nullable=True,unique=True)
+    personal_email_address = Column(String,nullable=False,unique=True)
