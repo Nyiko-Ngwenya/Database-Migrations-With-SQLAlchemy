@@ -10,7 +10,7 @@ class Recruit(Base):
     id = Column(Integer,primary_key=True)
     first_name = Column(String)
     surname = Column(String)
-    chatname = Column(String)
+    rocketchat_user = Column(String)
     github_name = Column(String)
     id_number = Column(Integer)
     personal_email_address = Column(String,nullable=False,unique=True)
