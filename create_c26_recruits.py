@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from models import Recruit
 
 
-engine = create_engine('postgresql+psycopg2://pguser:password@localhost:6543/production', echo=True)
+engine = create_engine('postgresql+psycopg2://pguser:password@localhost:6543/development', echo=True)
 Session = sessionmaker(bind=engine)
 session = Session()
 
