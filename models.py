@@ -14,3 +14,4 @@ class Recruit(Base):
     github_name = Column(String)
     id_number = Column(Integer)
     personal_email_address = Column(String,nullable=False,unique=True)
+    cohort = Column(String,server_default="C25 Data Eng",default="C25 Data Eng",nullable=False)
